@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color:  #333;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.container {
+  display:flex;
+  align-items: flex-start;
+  padding: 1rem 3rem;
+  margin-top: 6rem;
+  overflow: hidden;
+}
+
+.logo-alura{
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: 3rem;
+}
+
+.section-encrypt {
+  width: 55vw;
+  height: 80vh;
+  /* agregado reciente mente */
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#section-copy {
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 20vw;
+  display: grid;
+  flex-direction: column;
+  height: 80vh
+}
+
+#section-img{
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 20vw;
+  display: grid;
+  padding: 1rem;
+  place-items: center;
+  height: 80vh
+}
+
+textarea{
+  font-size: 1rem;
+  height: 85%;
+  width: 80%;
+  border: transparent;
+  background-color: transparent;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  color: #0c1f49;
+}
+
+button {
+  background-color: #0c1f49;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 13px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin: 15px 0;
+  max-width: 300px;
+  min-width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+button:hover {
+  background-color: #1b3a54;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #1b3a54;
+  transform: translateY(1px);
+}
+
+button:disabled {
+  background-color: #808080;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.lupa{
+  width: 100%;
+}
+
+h3{
+  padding-top: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+  color: #0c1f49;
+  font-weight: bold;
+  line-height: 1.5;
+  align-items: flex-start;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  #section-copy {
+    width: 100%;
+  }
+  #section-img{
+    width: 100%;
+  }
+  .section-encrypt {
+    width: 100%;
+  }
+  #section-copy {
+    height: 40vh
+  }
+  #section-img{
+    height: 40vh
+  }
+  textarea{
+    height: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  img{
+    display: none;
+  }
+}
